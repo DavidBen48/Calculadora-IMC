@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="image\undraw_personal_trainer_re_cnua (1).svg">
+        </section>
+
+        <div class="outside">
+        <section id="calculator">
+            
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - <span id="green">IMC</span>
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em kg
+                    </label>
+                    <div class="input-field" title="Coloque apenas números inteiros. Exemplo: 50 / 70">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" name="weight" required>
+                        <span id="green">
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box" title="Coloque número decimal. Exemplo: 1.50 / 1.70">
+                    <label for="height">
+                        Altura em metros
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="0.01" id="height" name="height" required>
+                        <span id="green">
+                            M
+                        </span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+            </form>    
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>  
+                </div>
+
+                <div id="my-github">
+                    <a href="https://github.com/DavidBen48" target="_blank">
+                        Quer saber mais sobre mim? Vá em meu GitHub! :D
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>   
+        </section>
+    </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
